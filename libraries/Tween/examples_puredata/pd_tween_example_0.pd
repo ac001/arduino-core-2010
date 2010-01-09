@@ -1,0 +1,86 @@
+#N canvas 272 22 707 502 10;
+#X msg 38 385 close;
+#X obj 105 383 loadbang;
+#X msg 103 408 stopbit 1;
+#X obj 12 160 pack f f;
+#X obj 11 41 hradio 25 1 0 3 empty empty empty 0 -8 0 10 -257985 -1
+-1 0;
+#X obj 44 138 int;
+#X obj 82 323 r __SMS;
+#X obj 87 436 comport 4 9600;
+#X obj 84 354 convert.pd2ascii CR;
+#X obj 216 332 s __SMS;
+#X obj 214 142 metro 1000;
+#X obj 212 117 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 1
+1;
+#X text 224 349 <-- http://wiki.dataflow.ws/PdMtlAbstractions are needed
+in your PD path;
+#X text 193 432 <-- Change "4" for the serial port number of your Arduino
+;
+#X text 336 449 Over FTDI USB to serial converter;
+#X text 232 120 Little chase;
+#X obj 451 87 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
+1;
+#X msg 213 207 list L 0 0 1000;
+#X msg 214 229 list L 1 0 1000;
+#X obj 453 150 * 255;
+#X obj 583 204 s __SMS;
+#X obj 470 87 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
+1;
+#X obj 492 129 * 255;
+#X obj 489 87 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
+1;
+#X obj 531 106 * 255;
+#X msg 454 171 list L 0 \$1 1000;
+#X msg 493 150 list L 1 \$1 1000;
+#X msg 532 127 list L 2 \$1 1000;
+#X text 299 85 Controls the three LEDs:;
+#X text 302 98 With 1000 ms ramp;
+#X obj 14 208 s __SMS;
+#X obj 98 37 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -260097
+-1 -1 0 1;
+#X text 225 378 You will also need the SimpleMessageSystem Arduino
+library;
+#X msg 214 250 list L 1 255 1000;
+#X msg 214 271 list L 0 255 1000;
+#X msg 14 182 list L \$1 \$2 1000;
+#X text 199 14 Example for the Tween class for Arduino.;
+#X text 197 30 To use with tween_example_0 code for Arduino.;
+#X obj 213 185 sel 0 1 2 3 4 5;
+#X msg 215 291 list L 2 255 1000;
+#X obj 213 164 count.modulo 6;
+#X msg 215 312 list L 2 0 1000;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 3 0 35 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 1;
+#X connect 6 0 8 0;
+#X connect 8 0 7 0;
+#X connect 10 0 40 0;
+#X connect 11 0 10 0;
+#X connect 16 0 19 0;
+#X connect 17 0 9 0;
+#X connect 18 0 9 0;
+#X connect 19 0 25 0;
+#X connect 21 0 22 0;
+#X connect 22 0 26 0;
+#X connect 23 0 24 0;
+#X connect 24 0 27 0;
+#X connect 25 0 20 0;
+#X connect 26 0 20 0;
+#X connect 27 0 20 0;
+#X connect 31 0 5 0;
+#X connect 33 0 9 0;
+#X connect 34 0 9 0;
+#X connect 35 0 30 0;
+#X connect 38 0 17 0;
+#X connect 38 1 18 0;
+#X connect 38 2 33 0;
+#X connect 38 3 34 0;
+#X connect 38 4 39 0;
+#X connect 38 5 41 0;
+#X connect 39 0 9 0;
+#X connect 40 0 38 0;
+#X connect 41 0 9 0;
