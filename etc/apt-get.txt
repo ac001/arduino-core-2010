@@ -1,0 +1,2 @@
+## List of all the debian packages
+avg-gcc avr-libc avrdude
