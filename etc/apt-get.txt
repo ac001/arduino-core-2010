@@ -1,2 +1,3 @@
 ## List of all the debian packages
-avg-gcc avr-libc avrdude
+avg-gcc avr-libc avrdude binutils-avr gcc-avr
+ 
