@@ -4,12 +4,10 @@
 
 The intention of this repository is to create an initial staging
 area for arduino core and its libraries. 
-The repository already cotains scripts to pull from svn, 
-and git submodule to automate the process.
 
-((Note::
-[05:52] <deizel> p_masho: users who clone your repo will also need to run commands to pull in submodules, so mention in your readme
-))
+The repository already contains scripts to 
+* pull from svn, 
+* and git submodule to automate the process.
 
 All libraries to be split up into packages eg
 * Min requirement is code, compile+libs and boot-up-loader.
