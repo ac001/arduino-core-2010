@@ -7,7 +7,10 @@ At the moment this is for demonstration.
 
 But it will be heaven for an end user, instead of having to go off and downlaod, unzip etc..
 
-Only snag is somehow linking the documentationa and website.... and credits etc
+Only snag is somehow 
+* Versioning
+* linking the documentationa and website.... and credits etc
+
 
 To be clever, a set of script could be setup to "pull" this stuff
 from recognised places eg
