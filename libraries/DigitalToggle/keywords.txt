@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map For DigitalToggle
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#identifier	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+digitalToggle	KEYWORD2
+digitalToggleFast	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#identifier KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#identifier 	LITERAL1
